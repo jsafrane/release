@@ -1,5 +1,7 @@
 ref:
   as: storage-obj-save
+  best_effort: true
+  timeout: 10m
   from: tests
   commands: storage-obj-save-commands.sh
   resources:

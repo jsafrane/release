@@ -1,4 +1,7 @@
 ref:
+  # Allow the step to fail
+  best_effort: true
+  timeout: 10m
   as: storage-obj-check
   from: tests
   commands: storage-obj-check-commands.sh

@@ -1,6 +1,7 @@
 workflow:
   as: openshift-e2e-azure-csi
   steps:
+    allow_best_effort_post_steps: true
     pre:
     - chain: ipi-azure-pre
     - ref: storage-conf-csi-azure-disk

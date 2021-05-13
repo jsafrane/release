@@ -1,6 +1,7 @@
 workflow:
   as: openshift-e2e-ovirt-csi
   steps:
+    allow_best_effort_post_steps: true
     pre:
     - chain: ipi-ovirt-pre
     - ref: storage-obj-save
