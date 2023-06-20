@@ -3,6 +3,10 @@ set -o errexit # Nozero exit code of any of the commands below will fail the tes
 set -o nounset
 set -o pipefail
 
+echo "Using:"
+# This already prints "go version go1.20 linux/amd64"
+go version
+
 die_modlist() {
     echo "ERROR: go list -mod=readonly -m all failed with the message listed above."
     echo "Cachito used in ART builds will fail to resolve dependencies offline."
